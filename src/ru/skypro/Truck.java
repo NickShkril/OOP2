@@ -1,12 +1,10 @@
 package ru.skypro;
 
-public class Truck extends ServiceStation {
-
+public class Truck extends Vehicle implements GroundVehicle{
 
     public Truck(String modelName, int wheelCount) {
         super(modelName, wheelCount);
     }
-
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
