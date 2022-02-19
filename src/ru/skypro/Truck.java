@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class Truck extends Vehicle implements GroundVehicle{
+public class Truck extends Vehicle implements TruckVehicle{
 
     public Truck(String modelName, int wheelCount) {
         super(modelName, wheelCount);

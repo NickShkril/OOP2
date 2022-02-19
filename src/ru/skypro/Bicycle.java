@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class Bicycle extends Vehicle implements GroundVehicle {
+public class Bicycle extends Vehicle implements BicycleVehicle {
 
     public Bicycle(String modelName, int wheelCount) {
         super(modelName, wheelCount);
@@ -9,17 +9,5 @@ public class Bicycle extends Vehicle implements GroundVehicle {
     @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку");
-    }
-
-    @Override
-    public void checkEngine() {
-        {
-            System.out.println("Проверяем двигатель");
-        }
-    }
-
-    @Override
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
     }
 }
